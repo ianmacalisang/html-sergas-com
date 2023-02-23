@@ -6,14 +6,14 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar"
-      aria-controls="mainNavbar"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+      data-bs-toggle="offcanvas"
+      href="#offCanvasMenu"
+      role="button"
+      aria-controls="offCanvasMenu"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+    <!-- Start in desktop mode -->
     <div
       class="collapse navbar-collapse navbar-custom bg-white"
       id="mainNavbar"
@@ -74,5 +74,94 @@
         </div>
       </div>
     </div>
+    <!-- End menu in desktop mode -->
+    <!-- Start menu in mobile -->
+    <div
+      class="collapse offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offCanvasMenu"
+      aria-labelledby="offCanvasMenu"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">
+          <img src="../public/images/main-logo.png" style="width: 100px" />
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-secondary dropdown-toggle my-account-button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="../public/images/default-avatar.png"
+                class="nav-profile-picture"
+              />
+              My Account
+              <ion-icon
+                name="chevron-down-outline"
+                style="margin-bottom: -2px"
+              ></ion-icon>
+            </button>
+            <ul class="dropdown-menu">
+              <a href="#"><li>Option 1</li></a>
+              <a href="#"><li>Option 2</li></a>
+              <a href="#"><li>Option 3</li></a>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div>
+          <ul class="navbar-nav offcanvas-menu me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><ion-icon name="home-outline"></ion-icon> For Your Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><ion-icon name="business-outline"></ion-icon> For Your
+                Business</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><ion-icon name="people-outline"></ion-icon> About SERGAS
+                Group</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                Contact Us</a
+              >
+            </li>
+          </ul>
+          <hr />
+          <div>
+            <div class="search" style="margin: 0">
+              <i class="fa fa-search"></i>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Type Here"
+                style="width: 100%"
+              />
+              <button class="btn btn-primary">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End menu in mobile-->
   </div>
 </nav>
