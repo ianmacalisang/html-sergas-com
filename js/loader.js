@@ -34,7 +34,7 @@ $(document).ready(function () {
       } else if (URI == "/contact") {
         $(".contactLink").addClass("active");
       }
-    }, 1000);
+    }, 300);
   }
   loadStatic();
   getViews(path);
