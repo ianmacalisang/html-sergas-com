@@ -1,21 +1,42 @@
-window.onload = function () {
-  function a(a, b) {
-    var c = /^(?:file):/,
-      d = new XMLHttpRequest(),
-      e = 0;
-    d.onreadystatechange = function () {
-      4 == d.readyState && (e = d.status),
-        c.test(location.href) && d.responseText && (e = 200),
-        4 == d.readyState && 200 == e && (a.outerHTML = d.responseText);
-    };
-    try {
-      d.open("GET", b, !0), d.send();
-    } catch (f) {}
+$(document).ready(function () {
+  var path = window.location.pathname;
+
+  function loadStatic() {
+    $("#headerContainer").load("./partials/header.html");
+    $("#footerContainer").load("./partials/footer.html");
   }
-  var b,
-    c = document.getElementsByTagName("*");
-  for (b in c)
-    c[b].hasAttribute &&
-      c[b].hasAttribute("data-include") &&
-      a(c[b], c[b].getAttribute("data-include"));
-};
+  function getViews(URI) {
+    if (URI == "/") {
+      $("title").html("Home | Sergas Group of Companies");
+      $("#viewsContainer").load("./views/home.html");
+    } else if (URI == "/business") {
+      $("title").html("For Business | Sergas Group of Companies");
+      $("#viewsContainer").load("./views/business.html");
+      setTimeout(function () {
+        $("#business-cta").load("./partials/business-cta.html");
+      }, 300);
+    } else if (URI == "/about") {
+      $("title").html("About Us | Sergas Group of Companies");
+      $("#viewsContainer").load("./views/about.html");
+    } else if (URI == "/contact") {
+      $("title").html("Contact Us | Sergas Group of Companies");
+      $("#viewsContainer").load("./views/contact.html");
+    }
+  }
+  function getActive(URI) {
+    setTimeout(function () {
+      if (URI == "/") {
+        $(".homeLink").addClass("active");
+      } else if (URI == "/business") {
+        $(".businessLink").addClass("active");
+      } else if (URI == "/about") {
+        $(".aboutLink").addClass("active");
+      } else if (URI == "/contact") {
+        $(".contactLink").addClass("active");
+      }
+    }, 300);
+  }
+  loadStatic();
+  getViews(path);
+  getActive(path);
+});
