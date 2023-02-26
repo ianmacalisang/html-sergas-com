@@ -9,18 +9,30 @@ $(document).ready(function () {
     if (URI == "/") {
       $("title").html("Home | Sergas Group of Companies");
       $("#viewsContainer").load("./views/home.html");
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/home/nav-menu.html");
+      }, 500);
     } else if (URI == "/business") {
       $("title").html("For Business | Sergas Group of Companies");
       $("#viewsContainer").load("./views/business.html");
       setTimeout(function () {
         $("#business-cta").load("./partials/business-cta.html");
-      }, 1000);
+        $(".load-submenu").load("./views/inner/business/nav-menu.html");
+      }, 500);
     } else if (URI == "/about") {
       $("title").html("About Us | Sergas Group of Companies");
       $("#viewsContainer").load("./views/about.html");
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+      }, 500);
     } else if (URI == "/contact") {
       $("title").html("Contact Us | Sergas Group of Companies");
       $("#viewsContainer").load("./views/contact.html");
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/contact/nav-menu.html");
+      }, 500);
+    } else {
+      alert("Page Not Found");
     }
   }
   function getActive(URI) {

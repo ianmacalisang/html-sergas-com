@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 body {
   font-family: "Inter", sans-serif;
+  color: #1f2e3e;
+}
+h1 {
+  font-size: 64px;
 }
 .active {
   background-color: #eff2f8;
@@ -250,8 +254,7 @@ body {
 .dropdown-menu a:hover {
   color: #335c92;
 }
-
-.offcanvas-menu li {
+home-banner-card .offcanvas-menu li {
   border-right: none;
 }
 .home-banner {
@@ -260,7 +263,7 @@ body {
   background: url("../public/images/home-banner.png") no-repeat right top;
 }
 .home-banner h3 {
-  color: #fbba38;
+  color: #e5a026;
 }
 .home-banner-form {
   margin-top: 30px;
@@ -274,8 +277,8 @@ body {
 }
 .home-banner-form input.btn {
   background-color: #fbba38;
-  color: #335c92;
-  border: #fbba38 1px solid;
+  color: #000;
+  border: #e5a026 1px solid;
 }
 @media only screen and (max-width: 990px) {
   .home-banner-form input,
@@ -298,6 +301,7 @@ body {
 }
 .home-banner-card {
   text-align: center;
+  color: #1f2e3e;
 }
 .home-banner-card img {
   height: 150px;
@@ -307,8 +311,8 @@ body {
   margin-top: -100px;
 }
 .app-section {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: url("../public/images/app-section-bg.png") no-repeat center bottom;
   background-size: cover;
 }
@@ -324,7 +328,7 @@ body {
   margin-top: -100px;
 }
 .app-section-download img {
-  height: 50px;
+  height: 60px;
   float: left;
   margin-right: 10px;
 }
@@ -332,7 +336,9 @@ body {
   text-align: center;
 }
 .clients-section-image {
-  height: 210px;
+  height: 250px;
+  margin: 0px 30px 30px 30px;
+  float: left;
 }
 .clients-section .happy-client-heading {
   font-size: 22px;
@@ -368,11 +374,88 @@ body {
 }
 .secondary-btn {
   border-radius: 50px;
-  background-color: #fbba38;
+  background-color: #fea702;
   color: #fff;
   text-transform: capitalize;
 }
 .secondary-btn:hover {
   background-color: #335c92;
   color: #fff;
+}
+.header-sublinks {
+  position: absolute;
+  right: 0;
+  top: 68;
+}
+.header-sublinks-context {
+  list-style: none;
+  border: none !important;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header-sublinks-context li {
+  margin-left: 30px;
+}
+.header-sublinks-context li a {
+  color: #335c92;
+}
+.offcanvas-menu li,
+.offcanvas-menu li:hover {
+  border: 0;
+}
+.header-sublinks-context-mobile {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-sublinks-context-mobile li {
+  padding: 0px 0px 8px 0px;
+}
+.header-sublinks-context-mobile li a {
+  color: #335c92;
+}
+.business-cta-container .card {
+  border: none;
+  height: 250px;
+  box-shadow: none;
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-right: 110px;
+}
+.business-cta-1 {
+  background: url("../public/images/business-cta-1.svg");
+}
+.business-cta-2 {
+  background: url("../public/images/business-cta-2.svg");
+}
+.business-cta-3 {
+  background: url("../public/images/business-cta-3.svg");
+}
+.business-icons {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+.business-icons img {
+  height: 50px;
+  margin-right: 20px;
+}
+.business-icons-inner {
+  border: #4e72b1 2px solid;
+  border-radius: 10px;
+  padding: 25px 15px 25px 15px;
+}
+.business-icons-inner span {
+  font-size: 28px;
+  font-weight: 600;
+  color: #4f72b2;
+  position: absolute;
+  top: 35;
+}
+.business-icons-subtitle {
+  color: #4f72b2;
+  text-align: center;
+  margin-top: 10px;
 }
