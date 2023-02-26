@@ -19,13 +19,40 @@ $(document).ready(function () {
         $("#business-cta").load("./partials/business-cta.html");
         $(".load-submenu").load("./views/inner/business/nav-menu.html");
       }, 500);
-    } else if (URI == "/about") {
-      $("title").html("About Us | Sergas Group of Companies");
-      $("#viewsContainer").load("./views/about.html");
+    }
+
+    // start loading all about inner pages
+    else if (URI == "/about/message-from-management") {
+      $("title").html(
+        "About Us | Message From Management | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load("./views/inner/about/message.html");
       setTimeout(function () {
         $(".load-submenu").load("./views/inner/about/nav-menu.html");
       }, 500);
-    } else if (URI == "/contact") {
+    } else if (URI == "/about/history") {
+      $("title").html("About Us | Our History | Sergas Group of Companies");
+      $("#viewsContainer").load("./views/inner/about/history.html");
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+      }, 500);
+    } else if (URI == "/about/sergas-group-members") {
+      $("title").html(
+        "About Us | Our Group Members | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load("./views/inner/about/members.html");
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+      }, 500);
+    } else if (URI == "/about/qhse-policy") {
+      $("title").html("About Us | QHSE Policy | Sergas Group of Companies");
+      $("#viewsContainer").load("./views/inner/about/policy.html");
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+      }, 500);
+    }
+    // end loading all about inner pages
+    else if (URI == "/contact") {
       $("title").html("Contact Us | Sergas Group of Companies");
       $("#viewsContainer").load("./views/contact.html");
       setTimeout(function () {
@@ -41,7 +68,12 @@ $(document).ready(function () {
         $(".homeLink").addClass("active");
       } else if (URI == "/business") {
         $(".businessLink").addClass("active");
-      } else if (URI == "/about") {
+      } else if (
+        URI == "/about/sergas-group-members" ||
+        URI == "/about/message-from-management" ||
+        URI == "/about/history" ||
+        URI == "/about/qhse-policy"
+      ) {
         $(".aboutLink").addClass("active");
       } else if (URI == "/contact") {
         $(".contactLink").addClass("active");
@@ -51,4 +83,5 @@ $(document).ready(function () {
   loadStatic();
   getViews(path);
   getActive(path);
+  console.log(path);
 });

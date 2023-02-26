@@ -293,6 +293,13 @@ home-banner-card .offcanvas-menu li {
   .footer-tagline {
     padding-top: 250px;
   }
+  .about-toggle-container .dropdown-item {
+    text-align: left !important;
+  }
+  .about-toggle-container {
+    background-color: #fff !important;
+    border: none !important;
+  }
 }
 .card {
   -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.75);
@@ -458,4 +465,21 @@ home-banner-card .offcanvas-menu li {
   color: #4f72b2;
   text-align: center;
   margin-top: 10px;
+}
+.about-toggle-container {
+  margin-top: 5px;
+  border-radius: 0px;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.about-toggle-container .dropdown-item {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px #e5e5e5 solid;
+  font-size: 16px;
+}
+.dropdown-item:active {
+  background-color: #4f72b2;
+  color: #fff !important;
 }

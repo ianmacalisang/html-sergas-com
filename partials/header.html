@@ -29,10 +29,33 @@
             ><ion-icon name="business"></ion-icon> For Your Business</a
           >
         </li>
-        <li class="aboutLink nav-item">
-          <a class="nav-link" href="/about"
-            ><ion-icon name="people"></ion-icon> About SERGAS Group</a
+        <li class="aboutLink nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="javascript:void(0)"
+            data-bs-toggle="dropdown"
+            id="about-sergas"
+            aria-haspopup="true"
+            aria-expanded="false"
+            ><ion-icon name="people"></ion-icon> About SERGAS Group
+            <ion-icon
+              name="chevron-down-outline"
+              style="margin-bottom: -2px"
+            ></ion-icon
+          ></a>
+          <div
+            class="dropdown-menu about-toggle-container"
+            aria-labelledby="about-sergas"
           >
+            <a class="dropdown-item" href="/about/message-from-management"
+              >Message from Management</a
+            >
+            <a class="dropdown-item" href="/about/history">History</a>
+            <a class="dropdown-item" href="/about/sergas-group-members"
+              >Sergas Group Members</a
+            >
+            <a class="dropdown-item" href="/about/qhse-policy">QHSE Policy</a>
+          </div>
         </li>
         <li class="contactLink nav-item">
           <a class="nav-link" href="/contact"
@@ -160,10 +183,37 @@
                 ><ion-icon name="business"></ion-icon> For Your Business</a
               >
             </li>
-            <li class="aboutLink nav-item">
-              <a class="nav-link" href="/about"
-                ><ion-icon name="people"></ion-icon> About SERGAS Group</a
+            <li class="aboutLink nav-item dropdown">
+              <a
+                class="nav-link"
+                href="/about"
+                class="nav-link dropdown-toggle"
+                href="javascript:void(0)"
+                data-bs-toggle="dropdown"
+                id="about-sergas"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><ion-icon name="people"></ion-icon> About SERGAS Group
+                <ion-icon
+                  name="chevron-down-outline"
+                  style="margin-bottom: -2px"
+                ></ion-icon
+              ></a>
+              <div
+                class="dropdown-menu about-toggle-container"
+                aria-labelledby="about-sergas"
               >
+                <a class="dropdown-item" href="/about/message-from-management"
+                  >Message from Management</a
+                >
+                <a class="dropdown-item" href="/about/history">History</a>
+                <a class="dropdown-item" href="/about/sergas-group-members"
+                  >Sergas Group Members</a
+                >
+                <a class="dropdown-item" href="/about/qhse-policy"
+                  >QHSE Policy</a
+                >
+              </div>
             </li>
             <li class="contactLink nav-item">
               <a class="nav-link" href="/contact"
