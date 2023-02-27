@@ -498,7 +498,7 @@ home-banner-card .offcanvas-menu li {
   color: #fff !important;
 }
 .about-message-banner {
-  background: url("../public/images/about-message-banner.png");
+  background: url("../public/images/about-message-banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -555,7 +555,7 @@ home-banner-card .offcanvas-menu li {
   color: #959595;
 }
 .about-history-banner {
-  background: url("../public/images/about-history-banner.png");
+  background: url("../public/images/about-history-banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
