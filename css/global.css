@@ -140,6 +140,7 @@ h1 {
 }
 #viewsContainer {
   margin-top: 120px;
+  overflow: hidden;
 }
 .footer-tagline {
   color: #fff;
@@ -299,6 +300,16 @@ home-banner-card .offcanvas-menu li {
   .about-toggle-container {
     background-color: #fff !important;
     border: none !important;
+  }
+  .about-message-divider img {
+    width: 300% !important;
+    margin-top: -150px !important;
+    overflow: hidden;
+  }
+  .mr-damak-photo {
+    width: 100% !important;
+    float: right;
+    padding: 0px;
   }
 }
 .card {
@@ -482,4 +493,61 @@ home-banner-card .offcanvas-menu li {
 .dropdown-item:active {
   background-color: #4f72b2;
   color: #fff !important;
+}
+.about-message-banner {
+  background: url("../public/images/about-message-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-message-banner-container {
+  padding-top: 700px;
+  padding-bottom: 100px;
+}
+
+.about-message-divider img {
+  width: 100%;
+  margin-top: -280px;
+}
+.mr-damak-photo {
+  width: 500px;
+}
+.blockqoute-custom {
+  width: 40px;
+  padding-top: 150px;
+}
+.about-message-paragraph {
+  font-size: 14px;
+}
+.about-message-paragraph .text-right {
+  text-align: right;
+  font-size: 16px;
+  color: #4f72b2;
+}
+.mission-vision-about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.mission-vision-about .card {
+  border: none;
+  background-color: #335c92;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+}
+.mission-vision-about .card img {
+  height: 70px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mission-vision-statement {
+  text-align: center;
+  background: #fff;
+  padding: 16px;
+  border-radius: 20px;
+}
+.mission-vision-statement p {
+  font-size: 16px;
+  color: #959595;
 }
