@@ -589,3 +589,29 @@ home-banner-card .offcanvas-menu li {
   width: 30px;
   margin-right: 20px;
 }
+.about-policy-banner {
+  background: url("../public/images/about-policy-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-qhse-policy-list {
+  list-style: none;
+  padding: 0;
+}
+.about-qhse-policy-list li {
+  margin-bottom: 18px;
+  text-align: left;
+}
+.about-qhse-policy-list li ion-icon {
+  font-size: 25px;
+  color: #4f72b2;
+  margin-right: 15px;
+  margin-bottom: -50px;
+}
+.about-qhse-policy-list li p {
+  margin-left: 40px;
+}
+.about-history-download img:hover {
+  opacity: 0.8;
+}
