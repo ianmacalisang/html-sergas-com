@@ -428,12 +428,28 @@ home-banner-card .offcanvas-menu li {
   list-style: none;
   margin: 0;
   padding: 0;
+  border: 0;
 }
 .header-sublinks-context-mobile li {
   padding: 0px 0px 8px 0px;
+  border: none;
 }
 .header-sublinks-context-mobile li a {
   color: #335c92;
+}
+.header-sublinks-context-mobile .dropdown-menu {
+  border-radius: 0px;
+}
+.header-sublinks-context-mobile .dropdown-menu,
+.header-sublinks-context-mobile .nav-item:hover {
+  border: 0;
+  background: transparent;
+}
+.header-sublinks-context-mobile .dropdown-menu .dropdown-item {
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .business-cta-container .card {
   border: none;
