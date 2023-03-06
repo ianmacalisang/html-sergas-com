@@ -35,7 +35,7 @@ $(document).ready(function () {
       $("#viewsContainer").load("./views/inner/about/about-us.html");
       setTimeout(function () {
         $(".load-submenu").load("./views/inner/about/nav-menu.html");
-        $("#sector-loader").load("./partials/sectors.html");
+        $("#sector-loader").load("./partials/sectors-tab.html");
       }, 500);
     } else if (URI == "/about/history/") {
       $("title").html("About Us | Our History | Sergas Group of Companies");
@@ -70,80 +70,119 @@ $(document).ready(function () {
         $(".load-submenu").load("./views/inner/about/nav-menu.html");
         $("#image-viewer-loader").load("./partials/image-viewer.html");
       }, 500);
-    } else if (URI == "/about/sectors-we-serve/agriculture/") {
+    } else if (URI == "/business/sectors-we-serve/agriculture/") {
       $("title").html(
-        "About Us | Sectors We Serve | Agriculture | Sergas Group of Companies"
+        "For Your Business | Sectors We Serve | Agriculture | Sergas Group of Companies"
       );
       $("#viewsContainer").load(
-        "./views/inner/about/nav-links/sectors-we-serve/agriculture.html"
+        "./views/inner/business/nav-links/sectors-we-serve/agriculture.html"
       );
       setTimeout(function () {
-        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $(".load-submenu").load("./views/inner/business/nav-menu.html");
         $("#sector-form-loader").load("./partials/inquiry-form.html");
         $("#business-cta").load("./partials/business-cta.html");
         $("#image-viewer-loader").load("./partials/image-viewer.html");
       }, 500);
-    } else if (URI == "/about/sectors-we-serve/hotels/") {
+    } else if (URI == "/business/sectors-we-serve/hotels/") {
       $("title").html(
-        "About Us | Sectors We Serve | Hotels | Sergas Group of Companies"
+        "For Your Business | Sectors We Serve | Hotels | Sergas Group of Companies"
       );
       $("#viewsContainer").load(
-        "./views/inner/about/nav-links/sectors-we-serve/hotels.html"
+        "./views/inner/business/nav-links/sectors-we-serve/hotels.html"
       );
       setTimeout(function () {
-        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $(".load-submenu").load("./views/inner/business/nav-menu.html");
         $("#sector-form-loader").load("./partials/inquiry-form.html");
         $("#business-cta").load("./partials/business-cta.html");
         $("#image-viewer-loader").load("./partials/image-viewer.html");
       }, 500);
-    } else if (URI == "/about/sectors-we-serve/labor-camp/") {
+    } else if (URI == "/business/sectors-we-serve/labor-camp/") {
       $("title").html(
-        "About Us | Sectors We Serve | Labor Camp | Sergas Group of Companies"
+        "For Your Business | Sectors We Serve | Labor Camp | Sergas Group of Companies"
       );
       $("#viewsContainer").load(
-        "./views/inner/about/nav-links/sectors-we-serve/labor-camp.html"
+        "./views/inner/business/nav-links/sectors-we-serve/labor-camp.html"
       );
       setTimeout(function () {
-        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $(".load-submenu").load("./views/inner/business/nav-menu.html");
         $("#sector-form-loader").load("./partials/inquiry-form.html");
         $("#business-cta").load("./partials/business-cta.html");
         $("#image-viewer-loader").load("./partials/image-viewer.html");
       }, 500);
-    } else if (URI == "/about/sectors-we-serve/malls/") {
+    } else if (URI == "/business/sectors-we-serve/malls/") {
       $("title").html(
-        "About Us | Sectors We Serve | Malls | Sergas Group of Companies"
+        "For Your Business | Sectors We Serve | Malls | Sergas Group of Companies"
       );
       $("#viewsContainer").load(
-        "./views/inner/about/nav-links/sectors-we-serve/malls.html"
+        "./views/inner/business/nav-links/sectors-we-serve/malls.html"
       );
       setTimeout(function () {
-        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $(".load-submenu").load("./views/inner/business/nav-menu.html");
         $("#sector-form-loader").load("./partials/inquiry-form.html");
         $("#business-cta").load("./partials/business-cta.html");
         $("#image-viewer-loader").load("./partials/image-viewer.html");
       }, 500);
-    } else if (URI == "/about/sectors-we-serve/restaurants/") {
+    } else if (URI == "/business/sectors-we-serve/restaurants/") {
       $("title").html(
-        "About Us | Sectors We Serve | Restaurants | Sergas Group of Companies"
+        "For Your Business | Sectors We Serve | Restaurants | Sergas Group of Companies"
       );
       $("#viewsContainer").load(
-        "./views/inner/about/nav-links/sectors-we-serve/restaurants.html"
+        "./views/inner/business/nav-links/sectors-we-serve/restaurants.html"
       );
       setTimeout(function () {
-        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $(".load-submenu").load("./views/inner/business/nav-menu.html");
         $("#sector-form-loader").load("./partials/inquiry-form.html");
         $("#business-cta").load("./partials/business-cta.html");
         $("#image-viewer-loader").load("./partials/image-viewer.html");
       }, 500);
-    } else if (URI == "/about/sectors-we-serve/hospitals-and-labs/") {
+    } else if (URI == "/business/sectors-we-serve/hospitals-and-labs/") {
       $("title").html(
-        "About Us | Sectors We Serve | Hospitals and Labs | Sergas Group of Companies"
+        "For Your Business | Sectors We Serve | Hospitals and Labs | Sergas Group of Companies"
       );
       $("#viewsContainer").load(
-        "./views/inner/about/nav-links/sectors-we-serve/hospitals-and-labs.html"
+        "./views/inner/business/nav-links/sectors-we-serve/hospitals-and-labs.html"
       );
       setTimeout(function () {
-        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $(".load-submenu").load("./views/inner/business/nav-menu.html");
+        $("#sector-form-loader").load("./partials/inquiry-form.html");
+        $("#business-cta").load("./partials/business-cta.html");
+        $("#image-viewer-loader").load("./partials/image-viewer.html");
+      }, 500);
+    } else if (URI == "/business/sectors-we-serve/universities-and-schools/") {
+      $("title").html(
+        "For Your Business | Sectors We Serve | Universities and Schools | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load(
+        "./views/inner/business/nav-links/sectors-we-serve/universities-and-schools.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/business/nav-menu.html");
+        $("#sector-form-loader").load("./partials/inquiry-form.html");
+        $("#business-cta").load("./partials/business-cta.html");
+        $("#image-viewer-loader").load("./partials/image-viewer.html");
+      }, 500);
+    } else if (URI == "/business/sectors-we-serve/residential-buildings/") {
+      $("title").html(
+        "For Your Business | Sectors We Serve | Residential Buildings | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load(
+        "./views/inner/business/nav-links/sectors-we-serve/residential.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/business/nav-menu.html");
+        $("#sector-form-loader").load("./partials/inquiry-form.html");
+        $("#business-cta").load("./partials/business-cta.html");
+        $("#image-viewer-loader").load("./partials/image-viewer.html");
+      }, 500);
+    } else if (URI == "/business/sectors-we-serve/industries/") {
+      $("title").html(
+        "For Your Business | Sectors We Serve | Industries | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load(
+        "./views/inner/business/nav-links/sectors-we-serve/industries.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/business/nav-menu.html");
         $("#sector-form-loader").load("./partials/inquiry-form.html");
         $("#business-cta").load("./partials/business-cta.html");
         $("#image-viewer-loader").load("./partials/image-viewer.html");
@@ -151,9 +190,74 @@ $(document).ready(function () {
     }
     // end loading all about nav-links
 
-    // start loading business page nav links
-
-    // end loading business page nav links
+    // start loading services page nav links
+    else if (URI == "/about/services/emergency-operation-and-maintenance/") {
+      $("title").html(
+        "About Us | Services | Emergency Operation and Maintenance | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load(
+        "./views/inner/about/nav-links/services/emergency-operation.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $("#sector-form-loader").load("./partials/inquiry-form.html");
+        $("#sector-loader").load("./partials/sectors-tab.html");
+        $("#image-viewer-loader").load("./partials/image-viewer.html");
+      }, 500);
+    } else if (URI == "/about/services/gas-meter-billing-and-management/") {
+      $("title").html(
+        "About Us | Services | Gas Meter Billing and Management | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load(
+        "./views/inner/about/nav-links/services/gas-meter.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $("#sector-form-loader").load("./partials/inquiry-form.html");
+        $("#sector-loader").load("./partials/sectors-tab.html");
+        $("#image-viewer-loader").load("./partials/image-viewer.html");
+      }, 500);
+    } else if (URI == "/about/services/gas-supply-and-transportation/") {
+      $("title").html(
+        "About Us | Services | Gas Supply and Transportation | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load(
+        "./views/inner/about/nav-links/services/gas-supply.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $("#sector-form-loader").load("./partials/inquiry-form.html");
+        $("#sector-loader").load("./partials/sectors-tab.html");
+        $("#image-viewer-loader").load("./partials/image-viewer.html");
+      }, 500);
+    } else if (URI == "/about/services/gas-system-design-and-engineering/") {
+      $("title").html(
+        "About Us | Services | Gas System Design and Engineering | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load(
+        "./views/inner/about/nav-links/services/gas-design.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $("#sector-form-loader").load("./partials/inquiry-form.html");
+        $("#sector-loader").load("./partials/sectors-tab.html");
+        $("#image-viewer-loader").load("./partials/image-viewer.html");
+      }, 500);
+    } else if (URI == "/about/services/gas-system-engineering/") {
+      $("title").html(
+        "About Us | Services | Gas System Engineering, Procurement and Construction | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load(
+        "./views/inner/about/nav-links/services/gas-engineering.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/about/nav-menu.html");
+        $("#sector-form-loader").load("./partials/inquiry-form.html");
+        $("#sector-loader").load("./partials/sectors-tab.html");
+        $("#image-viewer-loader").load("./partials/image-viewer.html");
+      }, 500);
+    }
+    // end loading services page nav links
 
     // start loading contact us links
     else if (URI == "/contact-us/") {
@@ -184,7 +288,18 @@ $(document).ready(function () {
     setTimeout(function () {
       if (URI == "/") {
         $(".homeLink").addClass("active");
-      } else if (URI == "/business/") {
+      } else if (
+        URI == "/business/" ||
+        URI == "/business/sectors-we-serve/agriculture/" ||
+        URI == "/business/sectors-we-serve/hotels/" ||
+        URI == "/business/sectors-we-serve/labor-camp/" ||
+        URI == "/business/sectors-we-serve/malls/" ||
+        URI == "/business/sectors-we-serve/restaurants/" ||
+        URI == "/business/sectors-we-serve/hospitals-and-labs/" ||
+        URI == "/business/sectors-we-serve/universities-and-schools/" ||
+        URI == "/business/sectors-we-serve/residential-buildings/" ||
+        URI == "/business/sectors-we-serve/industries/"
+      ) {
         $(".businessLink").addClass("active");
       } else if (
         URI == "/about/why-choose-lpg/" ||
@@ -193,12 +308,11 @@ $(document).ready(function () {
         URI == "/about/message-from-management/" ||
         URI == "/about/history/" ||
         URI == "/about/qhse-policy/" ||
-        URI == "/about/sectors-we-serve/agriculture/" ||
-        URI == "/about/sectors-we-serve/hotels/" ||
-        URI == "/about/sectors-we-serve/labor-camp/" ||
-        URI == "/about/sectors-we-serve/malls/" ||
-        URI == "/about/sectors-we-serve/restaurants/" ||
-        URI == "/about/sectors-we-serve/hospitals-and-labs/"
+        URI == "/about/services/emergency-operation-and-maintenance/" ||
+        URI == "/about/services/gas-meter-billing-and-management/" ||
+        URI == "/about/services/gas-supply-and-transportation/" ||
+        URI == "/about/services/gas-system-design-and-engineering/" ||
+        URI == "/about/services/gas-system-engineering/"
       ) {
         $(".aboutLink").addClass("active");
       } else if (

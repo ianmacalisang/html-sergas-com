@@ -203,7 +203,8 @@ h1 {
   margin: 0;
 }
 .footer-list li {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 .footer-list li a,
 .footer-bottom-container a {
@@ -810,6 +811,15 @@ home-banner-card .offcanvas-menu li {
 .global-sector-hospital-and-labs-banner-bg {
   background: url("../public/images/sectors/hospitals-and-labs/banner.png");
 }
+.global-sector-universities-and-schools-banner-bg {
+  background: url("../public/images/sectors/universities-and-schools/banner.png");
+}
+.global-sector-residential-buildings-banner-bg {
+  background: url("../public/images/sectors/residential-buildings/banner.png");
+}
+.global-sector-industries-banner-bg {
+  background: url("../public/images/sectors/industries/banner.png");
+}
 .happy-clients-subtitle {
   padding: 15px;
   position: relative;
@@ -823,4 +833,20 @@ home-banner-card .offcanvas-menu li {
 .sector-restaurant-banner-subtitle {
   color: #e5a026;
   font-size: 32px;
+}
+.sectors-we-serve-industries {
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #335c92;
+}
+.sectors-we-serve-industries-context {
+  color: #fff;
+  border: #fff 1px solid;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+.service-subtitle {
+  font-weight: normal !important;
+  font-size: 16px !important;
 }
