@@ -978,3 +978,20 @@ home-banner-card .offcanvas-menu li {
   border-bottom: 30px solid #335c92;
   margin: auto;
 }
+#myMap {
+  background-color: #959595;
+  overflow: hidden;
+}
+.locations-card {
+  padding: 15px;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #eeeeee;
+  border: #e5e5e5 1px solid;
+}
+.locations-card hr {
+  width: 15%;
+  height: 2px;
+  border: 0;
+  border-top: 5px solid #e5a026;
+}

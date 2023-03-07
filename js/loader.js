@@ -267,14 +267,16 @@ $(document).ready(function () {
         $("#sector-loader").load("./partials/sectors-tab.html");
         $("#image-viewer-loader").load("./partials/image-viewer.html");
       }, 500);
-    } else if (URI == "/about/firefighting/") {
-      $("title").html("About Us | Firefighting | Sergas Group of Companies");
+    } else if (URI == "/business/firefighting/") {
+      $("title").html(
+        "For Your Business | Firefighting | Sergas Group of Companies"
+      );
       $("#viewsContainer").load(
-        "./views/inner/about/nav-links/firefighting.html"
+        "./views/inner/business/nav-links/firefighting.html"
       );
       setTimeout(function () {
         $(".load-submenu").load(
-          "./views/inner/about/nav-menu-firefighting.html"
+          "./views/inner/business/nav-menu-firefighting.html"
         );
         $("#firefighting-cta").load("./partials/firefighting-cta.html");
         $(".footer-top-container").addClass("firefighting-footer-bg");
@@ -301,6 +303,50 @@ $(document).ready(function () {
       setTimeout(function () {
         $(".load-submenu").load("./views/inner/contact/nav-menu.html");
       }, 500);
+    } else if (URI == "/contact-us/locations/") {
+      $("title").html("Contact Us | Our Locations | Sergas Group of Companies");
+      $("#viewsContainer").load(
+        "./views/inner/contact/nav-links/locations.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/contact/nav-menu.html");
+        // set map function here
+        function loadMap() {
+          var map = new Microsoft.Maps.Map($("#myMap")[0], {
+            center: new Microsoft.Maps.Location(
+              25.187863969324173,
+              55.26185619252998
+            ),
+            zoom: 18,
+          });
+          addPinToMap(map, 25.187863969324173, 55.26185619252998);
+        }
+
+        function addPinToMap(map, latitude, longitude) {
+          var pushpin = new Microsoft.Maps.Pushpin(
+            new Microsoft.Maps.Location(latitude, longitude),
+            {
+              icon: '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="39"><path d="M15 39C6.716 39 0 30.284 0 20S6.716 1 15 1s15 6.716 15 15-6.716 19-15 19z" fill="#335c92"/><circle cx="15" cy="20" r="8" fill="#fff"/></svg>',
+            }
+          );
+          map.entities.push(pushpin);
+        }
+
+        function changeMapPinEvent(event) {
+          var map = new Microsoft.Maps.Map($("#myMap")[0], {});
+          var latitude = parseFloat($(event.target).data("latitude"));
+          var longitude = parseFloat($(event.target).data("longitude"));
+          addPinToMap(map, latitude, longitude);
+          map.setView({
+            center: new Microsoft.Maps.Location(latitude, longitude),
+            zoom: 18,
+          });
+        }
+
+        $(".location-button").on("click", changeMapPinEvent);
+
+        loadMap();
+      }, 500);
     }
     // end loading contact us links
     else {
@@ -313,6 +359,7 @@ $(document).ready(function () {
         $(".homeLink").addClass("active");
       } else if (
         URI == "/business/" ||
+        URI == "/business/firefighting/" ||
         URI == "/business/sectors-we-serve/agriculture/" ||
         URI == "/business/sectors-we-serve/hotels/" ||
         URI == "/business/sectors-we-serve/labor-camp/" ||
@@ -327,7 +374,6 @@ $(document).ready(function () {
       } else if (
         URI == "/about/why-choose-lpg/" ||
         URI == "/about/news-and-media/" ||
-        URI == "/about/firefighting/" ||
         URI == "/about/sergas-group-members/" ||
         URI == "/about/message-from-management/" ||
         URI == "/about/history/" ||
@@ -341,7 +387,8 @@ $(document).ready(function () {
         $(".aboutLink").addClass("active");
       } else if (
         URI == "/contact-us/" ||
-        URI == "/contact-us/leave-a-feedback/"
+        URI == "/contact-us/leave-a-feedback/" ||
+        URI == "/contact-us/locations/"
       ) {
         $(".contactLink").addClass("active");
       }
