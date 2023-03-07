@@ -79,4 +79,17 @@ $(document).ready(function () {
       $("#image-viewer .modal-content img").attr("src", datasrc);
     });
   }, 500);
+  window.onload = function () {
+    var watermark = document.createElement("div");
+    watermark.style.position = "fixed";
+    watermark.style.top = "50%";
+    watermark.style.left = "50%";
+    watermark.style.transform = "translate(-50%, -50%) rotate(-15deg)";
+    watermark.style.fontSize = "3.5em";
+    watermark.style.fontWeight = "bold";
+    watermark.style.opacity = "0.2";
+    watermark.innerHTML =
+      "For Demo Purposes Only<br/><span style='font-size: 22px'>By: Ian Andrew Macalisang | Genwarp Web Development</span>";
+    document.body.appendChild(watermark);
+  };
 });
