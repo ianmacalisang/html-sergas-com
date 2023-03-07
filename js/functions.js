@@ -90,8 +90,7 @@ $(document).ready(function () {
       watermark.style.fontSize = "3.5em";
       watermark.style.fontWeight = "bold";
       watermark.style.opacity = "0.2";
-      watermark.innerHTML =
-        "For Demo Purposes Only<br/><span style='font-size: 22px'>By: Ian Andrew Macalisang | Genwarp Web Development</span>";
+      watermark.innerHTML = "For Demo Purposes Only";
       document.body.appendChild(watermark);
     }
 
