@@ -12,6 +12,17 @@ $(document).ready(function () {
       setTimeout(function () {
         $(".load-submenu").load("./views/inner/home/nav-menu.html");
       }, 500);
+    }
+
+    // load home nav pages
+    else if (URI == "/help-and-support/") {
+      $("title").html("Home | Help and Support | Sergas Group of Companies");
+      $("#viewsContainer").load(
+        "./views/inner/home/nav-links/help-and-support.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/home/nav-menu.html");
+      }, 500);
     } else if (URI == "/business/") {
       $("title").html("For Business | Sergas Group of Companies");
       $("#viewsContainer").load("./views/business.html");
@@ -256,6 +267,18 @@ $(document).ready(function () {
         $("#sector-loader").load("./partials/sectors-tab.html");
         $("#image-viewer-loader").load("./partials/image-viewer.html");
       }, 500);
+    } else if (URI == "/about/firefighting/") {
+      $("title").html("About Us | Firefighting | Sergas Group of Companies");
+      $("#viewsContainer").load(
+        "./views/inner/about/nav-links/firefighting.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load(
+          "./views/inner/about/nav-menu-firefighting.html"
+        );
+        $("#firefighting-cta").load("./partials/firefighting-cta.html");
+        $(".footer-top-container").addClass("firefighting-footer-bg");
+      }, 500);
     }
     // end loading services page nav links
 
@@ -286,7 +309,7 @@ $(document).ready(function () {
   }
   function getActive(URI) {
     setTimeout(function () {
-      if (URI == "/") {
+      if (URI == "/" || URI == "/help-and-support/") {
         $(".homeLink").addClass("active");
       } else if (
         URI == "/business/" ||
@@ -304,6 +327,7 @@ $(document).ready(function () {
       } else if (
         URI == "/about/why-choose-lpg/" ||
         URI == "/about/news-and-media/" ||
+        URI == "/about/firefighting/" ||
         URI == "/about/sergas-group-members/" ||
         URI == "/about/message-from-management/" ||
         URI == "/about/history/" ||
