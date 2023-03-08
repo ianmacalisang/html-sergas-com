@@ -79,28 +79,4 @@ $(document).ready(function () {
       $("#image-viewer .modal-content img").attr("src", datasrc);
     });
   }, 500);
-  window.onload = function () {
-    function addWatermark() {
-      var watermark = document.createElement("div");
-      watermark.className = "watermark";
-      watermark.style.position = "fixed";
-      watermark.style.top = "50%";
-      watermark.style.left = "50%";
-      watermark.style.transform = "translate(-50%, -50%) rotate(-15deg)";
-      watermark.style.fontSize = "3.5em";
-      watermark.style.fontWeight = "bold";
-      watermark.style.opacity = "0.2";
-      watermark.innerHTML = "For Demo Purposes Only";
-      document.body.appendChild(watermark);
-    }
-
-    function checkWatermark() {
-      var watermark = document.querySelector(".watermark");
-      if (!watermark) {
-        addWatermark();
-      }
-    }
-    addWatermark();
-    setInterval(checkWatermark, 1000);
-  };
 });
