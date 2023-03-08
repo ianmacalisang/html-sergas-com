@@ -82,5 +82,5 @@ $(document).ready(function () {
       console.log("button clicked");
       $("#meter-reading").click();
     });
-  }, 700);
+  }, 900);
 });
