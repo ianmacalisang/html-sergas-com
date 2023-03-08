@@ -433,7 +433,7 @@ $(document).ready(function () {
       $("#viewsContainer").load("./views/dashboard.html");
       setTimeout(function () {
         $("#dashboard-context").load("./views/inner/dashboard/feedback.html");
-      }, 200);
+      }, 100);
     }
     // end loading dashboard
     else {
@@ -495,7 +495,7 @@ $(document).ready(function () {
       } else if (URI == "/dash/feedback/") {
         $(".feedBackLink").addClass("active");
       }
-    }, 100);
+    }, 200);
   }
   loadStatic(path);
   getViews(path);
