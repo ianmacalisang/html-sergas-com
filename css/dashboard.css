@@ -1,0 +1,146 @@
+body {
+  background-color: #f5f5f5;
+}
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 260px;
+  z-index: 600;
+  font-size: 14px;
+}
+.sidebar a {
+  color: #959595;
+}
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  background-color: #335c92;
+  border-right: #e5a026 8px solid;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+.list-group-item {
+  border-bottom: none;
+}
+.list-group-item ion-icon {
+  margin-bottom: -3px;
+  margin-right: 8px;
+  font-size: 18px;
+}
+.dashboard-logo {
+  width: 90px;
+  margin: 10px;
+}
+.navbar {
+  z-index: 100 !important;
+  border-bottom: none;
+  width: 100%;
+}
+.navbar-custom {
+  width: 100%;
+  border-bottom: #ccc thin solid;
+}
+.navbar-custom ul {
+  margin-left: 400px;
+  border-bottom: none;
+}
+.dropdown-menu {
+  margin-left: unset !important;
+}
+.dash-sidebar-logo img {
+  width: 130px;
+  margin: 20px;
+}
+.card {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card-header {
+  background-color: #335c92;
+  color: #fff;
+  border-bottom: #e5a026 5px solid;
+  font-weight: bold;
+}
+.card-body {
+  margin: 10px;
+  border: #ccc 2px solid;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+}
+.body-headings {
+  color: #335c92;
+  font-weight: bold;
+  font-size: 16px;
+}
+.body-subtitle {
+  font-size: 12px;
+  color: #959595;
+}
+.body-values {
+  font-weight: bolder;
+  font-size: 16px;
+}
+.body-subheading {
+  font-size: 14px;
+}
+.body-subheading-num {
+  color: #e5a026;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+  color: #335c92;
+}
+.clearSize {
+  font-size: 14px;
+}
+.file-upload {
+  background-color: #f6f6f6;
+  border: #b2b2b2 dashed 2px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 10px;
+}
+.file-upload:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.file-upload ion-icon {
+  color: #b2b2b2;
+  font-size: 36px;
+}
+.reading-container {
+  display: flex;
+  margin-top: 8px;
+}
+
+.reading-digit {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  text-align: center;
+  border: 1px solid #536c8d;
+  line-height: 30px;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+}

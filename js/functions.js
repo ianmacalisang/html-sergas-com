@@ -78,5 +78,9 @@ $(document).ready(function () {
       $("#image-viewer").modal("show");
       $("#image-viewer .modal-content img").attr("src", datasrc);
     });
-  }, 500);
+    $("#file-upload").click(function () {
+      console.log("button clicked");
+      $("#meter-reading").click();
+    });
+  }, 300);
 });
