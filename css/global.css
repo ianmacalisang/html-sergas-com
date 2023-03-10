@@ -1038,9 +1038,25 @@ home-banner-card .offcanvas-menu li {
   content: url("../public/images/group-members-desktop.svg");
   width: 100%;
 }
+.for-business-img {
+  content: url("../public/images/for-business-img-desktop.svg");
+  width: 100%;
+}
+.key-milestone-img {
+  content: url("../public/images/services/firefighting/milestone-img-desktop.svg");
+  width: 100%;
+}
 @media only screen and (max-width: 600px) {
   .about-members-img {
     content: url("../public/images/group-members-mobile.svg");
+    width: 100%;
+  }
+  .for-business-img {
+    content: url("../public/images/for-business-img-mobile.svg");
+    width: 100%;
+  }
+  .key-milestone-img {
+    content: url("../public/images/services/firefighting/milestone-img-mobile.svg");
     width: 100%;
   }
 }
