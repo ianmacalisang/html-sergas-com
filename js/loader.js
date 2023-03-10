@@ -44,6 +44,14 @@ $(document).ready(function () {
       setTimeout(function () {
         $(".load-submenu").load("./views/inner/home/nav-menu.html");
       }, 600);
+    } else if (URI == "/downloads/") {
+      $("title").html("Home | Downloads | Sergas Group of Companies");
+      $("#viewsContainer").load(
+        "./views/inner/home/nav-links/downloads-section.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/home/nav-menu.html");
+      }, 600);
     } else if (URI == "/business/") {
       $("title").html("For Business | Sergas Group of Companies");
       $("#viewsContainer").load("./views/business.html");
@@ -440,7 +448,7 @@ $(document).ready(function () {
   }
   function getActive(URI) {
     setTimeout(function () {
-      if (URI == "/" || URI == "/help-and-support/") {
+      if (URI == "/" || URI == "/help-and-support/" || URI == "/downloads/") {
         $(".homeLink").addClass("active");
       } else if (
         URI == "/business/" ||
