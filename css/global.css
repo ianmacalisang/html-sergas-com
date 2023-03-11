@@ -642,7 +642,7 @@ home-banner-card .offcanvas-menu li {
   background-position: bottom;
 }
 .about-history-content-container {
-  padding: 80px 0px 80px 0px;
+  padding: 80px 0px 20px 0px;
 }
 .about-history-download {
   border-radius: 10px;
@@ -876,7 +876,7 @@ home-banner-card .offcanvas-menu li {
 }
 .service-subtitle {
   font-weight: normal !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 /* Start firefighting styles */
 
