@@ -1110,6 +1110,9 @@ home-banner-card .offcanvas-menu li {
     -webkit-columns: 1 !important;
     -moz-columns: 1 !important;
   }
+  .business-cta-container .card {
+    padding-right: 50px;
+  }
 }
 .clear-whitespace {
   margin-top: -80px;
