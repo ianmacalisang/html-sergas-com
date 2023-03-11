@@ -1059,8 +1059,12 @@ home-banner-card .offcanvas-menu li {
     content: url("../public/images/services/firefighting/milestone-img-mobile.svg");
     width: 100%;
   }
+  .tanker-units-loader {
+    content: url("../public/images/services/gas-supply/tanker-units-mobile.svg") !important;
+    width: 100%;
+  }
   h1 {
-    font-size: 50px !important;
+    font-size: 36px !important;
   }
   .home-banner::after {
     content: "";
@@ -1082,6 +1086,7 @@ home-banner-card .offcanvas-menu li {
   }
   .about-message-banner-container {
     padding-top: 250px;
+    padding-bottom: 50px;
   }
   .btn-lg {
     width: 100%;
@@ -1089,6 +1094,17 @@ home-banner-card .offcanvas-menu li {
   }
   .nav-tabs .nav-item {
     width: 100%;
+  }
+  #sector-form-loader,
+  .sector-banner-valign {
+    padding-top: 20px;
+    padding-bottom: unset !important;
+  }
+  .agriculture-list,
+  .gas-meter-list {
+    columns: 1 !important;
+    -webkit-columns: 1 !important;
+    -moz-columns: 1 !important;
   }
 }
 .clear-whitespace {
@@ -1100,4 +1116,18 @@ home-banner-card .offcanvas-menu li {
 }
 .tab-pane {
   padding: 10px;
+}
+.agriculture-list {
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+}
+.gas-meter-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+.tanker-units-loader {
+  content: url("../public/images/services/gas-supply/tanker-units-desktop.svg");
+  width: 100%;
 }
