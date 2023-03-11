@@ -1127,12 +1127,9 @@ home-banner-card .offcanvas-menu li {
 .tab-pane {
   padding: 10px;
 }
+
+.gas-meter-list,
 .agriculture-list {
-  columns: 4;
-  -webkit-columns: 4;
-  -moz-columns: 4;
-}
-.gas-meter-list {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
