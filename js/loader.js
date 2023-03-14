@@ -370,9 +370,25 @@ $(document).ready(function () {
             center: new Microsoft.Maps.Location(latitude, longitude),
             zoom: 18,
           });
+          $("html, body").animate(
+            {
+              scrollTop: $("#myMap").offset().top - 150,
+            },
+            1000
+          );
         }
         $(".location-button").on("click", changeMapPinEvent);
         loadMap();
+      }, 1100);
+    } else if (URI == "/contact-us/invest-with-us/") {
+      $("title").html(
+        "Contact Us | Invest with Us | Sergas Group of Companies"
+      );
+      $("#viewsContainer").load(
+        "./views/inner/contact/nav-links/invest-with-us.html"
+      );
+      setTimeout(function () {
+        $(".load-submenu").load("./views/inner/contact/nav-menu.html");
       }, 600);
     }
     // end loading contact us links
@@ -481,7 +497,8 @@ $(document).ready(function () {
       } else if (
         URI == "/contact-us/" ||
         URI == "/contact-us/leave-a-feedback/" ||
-        URI == "/contact-us/locations/"
+        URI == "/contact-us/locations/" ||
+        URI == "/contact-us/invest-with-us/"
       ) {
         $(".contactLink").addClass("active");
       }

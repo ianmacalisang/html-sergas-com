@@ -591,7 +591,7 @@ home-banner-card .offcanvas-menu li {
   padding-top: 150px;
 }
 .about-message-paragraph {
-  font-size: 14px;
+  font-size: 18px;
 }
 .about-message-paragraph .text-right {
   text-align: right;
@@ -625,7 +625,7 @@ home-banner-card .offcanvas-menu li {
   color: #959595;
 }
 .about-history-banner {
-  background: url("../public/images/about-history-banner.jpg");
+  background: url("../public/images/about-history-banner.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1137,4 +1137,21 @@ home-banner-card .offcanvas-menu li {
 .tanker-units-loader {
   content: url("../public/images/services/gas-supply/tanker-units-desktop.svg");
   width: 100%;
+}
+.business-cta-form {
+  background-color: #335c92;
+  padding: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.business-cta-form .btn {
+  border-radius: 8px;
+  font-weight: bold;
+}
+.business-cta-form .form-control {
+  margin-bottom: 12px;
+}
+.business-cta-form .form-select {
+  border-radius: 8px;
+  margin: unset;
 }

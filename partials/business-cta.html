@@ -3,7 +3,13 @@
     <div class="card business-cta-1">
       <div>
         <b>Need <br />Gas Supply?</b><br /><br />
-        <div class="btn secondary-btn">Get a Quote</div>
+        <div
+          class="btn secondary-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#business-cta-form"
+        >
+          Get a Quote
+        </div>
       </div>
     </div>
   </div>
@@ -11,7 +17,13 @@
     <div class="card business-cta-2">
       <div>
         <b>Gas & Fire<br />System Installation</b><br /><br />
-        <div class="btn secondary-btn">Contact Us Now</div>
+        <div
+          class="btn secondary-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#business-cta-form"
+        >
+          Contact Us Now
+        </div>
       </div>
     </div>
   </div>
@@ -19,7 +31,80 @@
     <div class="card business-cta-3">
       <div>
         <b>Operating & Maintaining<br />Your System</b><br /><br />
-        <div class="btn secondary-btn">Get your free site survey now</div>
+        <div
+          class="btn secondary-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#business-cta-form"
+        >
+          Get your free site survey now
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CTA Modal Form -->
+<div
+  class="modal fade"
+  id="business-cta-form"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="business-cta-form"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body business-cta-form">
+        <div class="text-white mb-3" style="font-size: 22px; font-weight: bold">
+          Please fill out the form:
+        </div>
+        <form>
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="Full Name"
+            name="fullName"
+            required
+          />
+          <input
+            class="form-control form-control-lg"
+            type="tel"
+            placeholder="Phone Number"
+            name="phoneNumber"
+            required
+          />
+          <input
+            class="form-control form-control-lg"
+            type="email"
+            placeholder="Email Address"
+            name="email"
+            required
+          /><input
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="Company Name"
+            name="companyName"
+            required
+          />
+          <select
+            class="form-select form-select-lg"
+            id="emirates"
+            name="emirates"
+          >
+            <option value="not_applicable" selected>Select an Emirate</option>
+            <option value="abu_dhabi">Abu Dhabi</option>
+            <option value="ajman">Ajman</option>
+            <option value="dubai">Dubai</option>
+            <option value="fujairah">Fujairah</option>
+            <option value="ras_al_khaimah">Ras Al Khaimah</option>
+            <option value="sharjah">Sharjah</option>
+            <option value="umm_al_quwain">Umm Al Quwain</option>
+          </select>
+          <div class="d-grid gap-2 mt-3">
+            <button class="btn secondary-btn btn-lg" type="submit">
+              SUBMIT
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
