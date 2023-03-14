@@ -1155,3 +1155,6 @@ home-banner-card .offcanvas-menu li {
   border-radius: 8px;
   margin: unset;
 }
+.modal-content {
+  background-color: #335c92;
+}
