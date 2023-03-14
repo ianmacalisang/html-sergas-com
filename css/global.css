@@ -1145,14 +1145,14 @@ home-banner-card .offcanvas-menu li {
   overflow: hidden;
 }
 .business-cta-form .btn {
-  border-radius: 8px;
   font-weight: bold;
 }
 .business-cta-form .form-control {
   margin-bottom: 12px;
+  border-radius: 50px;
 }
 .business-cta-form .form-select {
-  border-radius: 8px;
+  border-radius: 50px;
   margin: unset;
 }
 .modal-content {
